@@ -22,29 +22,37 @@ export default function OthersProfileScreen() {
   const [activeTab, setActiveTab] = useState("posts");
   const [refreshing, setRefreshing] = useState(false);
 
+  const fetchUserData = async () => {
+    try {
+      const response = await fetch(
+        `http://192.168.1.6:5000/api/users/profile/${name}`
+      );
+      const data = await response.json();
+      setUser(data);
+    } catch (error) {
+      console.error("Error fetching user data:", error);
+    }
+  };
+
+  const fetchPostsData = async () => {
+    try {
+      const response = await fetch(
+        `http://192.168.1.6:5000/api/posts/user/${name}`
+      );
+      const data = await response.json();
+      setPosts(data);
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+    }
+  };
+
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        // Fetch user data
-        const userResponse = await fetch(
-          `http://192.168.1.6:5000/api/users/profile/${name}`
-        );
-        const userData = await userResponse.json();
-        setUser(userData);
-
-        // Fetch user posts
-        const postsResponse = await fetch(
-          `http://192.168.1.6:5000/api/posts/user/${name}`
-        );
-        const postsData = await postsResponse.json();
-        setPosts(postsData);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
-      }
+      setLoading(true);
+      await fetchUserData();
+      await fetchPostsData();
+      setLoading(false);
     };
-
     fetchData();
   }, [name]);
 
@@ -55,18 +63,9 @@ export default function OthersProfileScreen() {
     setRefreshing(false);
   }, []);
 
-  if (loading && !refreshing) {
-    return (
-      <View className="flex-1 justify-center items-center bg-white">
-        <ActivityIndicator size="large" color="#000000" />
-        <Text className="mt-4">Loading...</Text>
-      </View>
-    );
-  }
-
   return (
     <View className="flex-1 bg-white">
-      {/* Header with Back Arrow */}
+      {/* Header with Back Arrow, Always Visible */}
       <View className="flex-row items-center p-5 border-b border-gray-200 bg-white">
         <TouchableOpacity onPress={() => router.back()} className="mr-3">
           <AntDesign name="arrowleft" size={26} color="black" />
@@ -74,42 +73,57 @@ export default function OthersProfileScreen() {
         <Text className="text-2xl font-bold">{name}</Text>
       </View>
 
-      <UserHeader
-        user={user}
-        activeTab={activeTab}
-        setActiveTab={setActiveTab}
-      />
+      {/* Loading Indicator */}
+      {loading && !refreshing && (
+        <View className="flex-1 justify-center items-center bg-white">
+          <ActivityIndicator size="large" color="#000000" />
+          <Text className="mt-4">Loading...</Text>
+        </View>
+      )}
 
-      {activeTab === "posts" ? (
-        loading ? (
-          <View className="flex-1 justify-center items-center p-8">
-            <ActivityIndicator size="large" color="#000000" />
-            <Text className="mt-4">Loading Posts...</Text>
-          </View>
-        ) : posts.length === 0 ? (
-          <View className="flex-1 justify-center items-center p-8">
-            <Text className="text-xl font-bold">No Posts Yet</Text>
-            <Text className="text-gray-500 mt-2">
-              This user has not shared any posts.
-            </Text>
-          </View>
-        ) : (
-          <FlatList
-            data={posts}
-            keyExtractor={(item) => item._id.toString()}
-            renderItem={({ item }) => (
-              <OtherPostListItem user={user} post={item} setPosts={setPosts} />
-            )}
-            showsVerticalScrollIndicator={false}
-            refreshControl={
-              <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
-            }
+      {/* Content */}
+      {!loading && (
+        <>
+          <UserHeader
+            user={user}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
           />
-        )
-      ) : (
-        activeTab === "replies" && (
-          <OtherRepliesListItem user={user} activeTab={activeTab} />
-        )
+
+          {activeTab === "posts" ? (
+            posts.length === 0 ? (
+              <View className="flex-1 justify-center items-center p-8">
+                <Text className="text-xl font-bold">No Posts Yet</Text>
+                <Text className="text-gray-500 mt-2">
+                  This user has not shared any posts.
+                </Text>
+              </View>
+            ) : (
+              <FlatList
+                data={posts}
+                keyExtractor={(item) => item._id.toString()}
+                renderItem={({ item }) => (
+                  <OtherPostListItem
+                    user={user}
+                    post={item}
+                    setPosts={setPosts}
+                  />
+                )}
+                showsVerticalScrollIndicator={false}
+                refreshControl={
+                  <RefreshControl
+                    refreshing={refreshing}
+                    onRefresh={onRefresh}
+                  />
+                }
+              />
+            )
+          ) : (
+            activeTab === "replies" && (
+              <OtherRepliesListItem user={user} activeTab={activeTab} />
+            )
+          )}
+        </>
       )}
     </View>
   );

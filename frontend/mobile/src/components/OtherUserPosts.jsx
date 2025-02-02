@@ -2,9 +2,12 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import { formatDistanceToNow } from "date-fns";
 import Actions from "./Actions";
+import { useRouter } from "expo-router";
 
 export default function PostListItem({ user, post }) {
+  const router = useRouter();
   const timeAgo = formatDistanceToNow(new Date(post.createdAt)) + " ago";
+
   return (
     <View className="bg-white py-5">
       <View className="flex-row gap-3 px-4">
@@ -30,16 +33,20 @@ export default function PostListItem({ user, post }) {
             </View>
           </View>
 
-          <Text className="text-sm text-gray-700">{post.text}</Text>
+          <TouchableOpacity onPress={() => router.push(`/posts/${post._id}`)}>
+            <Text className="text-sm text-gray-700">{post.text}</Text>
+          </TouchableOpacity>
 
-          {post.img && (
-            <View className="rounded-lg overflow-hidden border border-gray-200">
-              <Image
-                source={{ uri: post.img }}
-                className="w-full aspect-[4/3]"
-              />
-            </View>
-          )}
+          <TouchableOpacity onPress={() => router.push(`/posts/${post._id}`)}>
+            {post.img && (
+              <View className="rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  source={{ uri: post.img }}
+                  className="w-full aspect-[4/3]"
+                />
+              </View>
+            )}
+          </TouchableOpacity>
 
           <Actions
             postId={post._id}

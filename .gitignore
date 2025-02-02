@@ -3,6 +3,11 @@
 # dependencies
 node_modules/
 
+# Cloudinary
+frontend/mobile/src/context/
+
+
+
 # Expo
 .expo/
 dist/
@@ -34,3 +39,4 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+

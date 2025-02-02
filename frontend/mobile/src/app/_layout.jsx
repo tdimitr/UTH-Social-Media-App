@@ -12,7 +12,7 @@ export default function Layout() {
           <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
           <Stack.Screen name="(auth)" options={{ headerShown: false }} />
           <Stack.Screen name="messages" options={{ headerShown: false }} />
-          <Stack.Screen name="profile" options={{ headerShown: false }} />
+
           <Stack.Screen name="Freeze" options={{ headerTitle: "Freeze" }} />
 
           <Stack.Screen
@@ -22,6 +22,14 @@ export default function Layout() {
               animation: "slide_from_right",
             }}
           />
+          <Stack.Screen
+            name="profile"
+            options={{
+              headerShown: false,
+              animation: "slide_from_right",
+            }}
+          />
+          <Stack.Screen name="posts" options={{ title: "Post" }} />
         </Stack>
       </SocketContextProvider>
     </RecoilRoot>

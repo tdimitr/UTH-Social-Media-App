@@ -4,6 +4,7 @@ import { formatDistanceToNow } from "date-fns";
 import InitialsAvatar from "../context/InitialAvatars";
 import HomeActions from "./HomeActions";
 import { useRouter } from "expo-router";
+import Actions from "./Actions";
 
 export default function Post({ post, postedBy }) {
   const router = useRouter();
@@ -68,20 +69,24 @@ export default function Post({ post, postedBy }) {
           </View>
 
           {/* Post Text */}
-          <Text className="text-sm text-gray-700">{post.text}</Text>
+          <TouchableOpacity onPress={() => router.push(`/posts/${post._id}`)}>
+            <Text className="text-sm text-gray-700">{post.text}</Text>
+          </TouchableOpacity>
 
-          {/* Post Image */}
-          {post.img && (
-            <View className="rounded-lg overflow-hidden border border-gray-200">
-              <Image
-                source={{ uri: post.img }}
-                className="w-full aspect-[4/3]"
-              />
-            </View>
-          )}
+          <TouchableOpacity onPress={() => router.push(`/posts/${post._id}`)}>
+            {/* Post Image */}
+            {post.img && (
+              <View className="rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  source={{ uri: post.img }}
+                  className="w-full aspect-[4/3]"
+                />
+              </View>
+            )}
+          </TouchableOpacity>
 
           {/* Actions Section */}
-          <HomeActions
+          <Actions
             postId={post._id}
             likesCount={post.likes.length}
             repliesCount={post.replies.length}

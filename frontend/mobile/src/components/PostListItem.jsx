@@ -4,10 +4,11 @@ import { formatDistanceToNow } from "date-fns";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import * as SecureStore from "expo-secure-store";
 import Actions from "./Actions";
+import { useRouter } from "expo-router";
 
 export default function PostListItem({ user, post, setPosts }) {
+  const router = useRouter();
   const [isDeleteModalVisible, setDeleteModalVisible] = useState(false);
-
   const timeAgo = formatDistanceToNow(new Date(post.createdAt)) + " ago";
 
   const handleDeletePost = async () => {
@@ -66,17 +67,20 @@ export default function PostListItem({ user, post, setPosts }) {
               </TouchableOpacity>
             </View>
           </View>
+          <TouchableOpacity onPress={() => router.push(`/posts/${post._id}`)}>
+            <Text className="text-sm text-gray-700">{post.text}</Text>
+          </TouchableOpacity>
 
-          <Text className="text-sm text-gray-700">{post.text}</Text>
-
-          {post.img && (
-            <View className="rounded-lg overflow-hidden border border-gray-200">
-              <Image
-                source={{ uri: post.img }}
-                className="w-full aspect-[4/3]"
-              />
-            </View>
-          )}
+          <TouchableOpacity onPress={() => router.push(`/posts/${post._id}`)}>
+            {post.img && (
+              <View className="rounded-lg overflow-hidden border border-gray-200">
+                <Image
+                  source={{ uri: post.img }}
+                  className="w-full aspect-[4/3]"
+                />
+              </View>
+            )}
+          </TouchableOpacity>
 
           <Actions
             postId={post._id}

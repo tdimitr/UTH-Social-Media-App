@@ -1,6 +1,6 @@
 import { Stack } from "expo-router";
 
-export default function ProfileLayout() {
+export default function PostLayout() {
   return (
     <Stack
       screenOptions={{
@@ -8,7 +8,7 @@ export default function ProfileLayout() {
       }}
     >
       <Stack.Screen
-        name="[name]"
+        name="[post]"
         options={{
           animation: "slide_from_right",
         }}
