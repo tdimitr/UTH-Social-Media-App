@@ -1,0 +1,9 @@
+{
+  "_id": "1",
+  "username": "tdimitr",
+  "name": "Dimitris-Nikolaos Tsapalas",
+  "bio": "Electrical & Computer Engineering",
+  "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073208/1_yroii0.jpg",
+  "followers": ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11"],
+  "following": ["12", "13", "14"]
+}

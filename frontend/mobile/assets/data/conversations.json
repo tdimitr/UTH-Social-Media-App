@@ -1,0 +1,80 @@
+[
+  {
+    "_id": "a",
+    "participants": [
+      {
+        "_id": "1",
+        "username": "john_doe",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+      },
+      {
+        "_id": "2",
+        "username": "alice_smith",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg"
+      }
+    ],
+    "lastMessage": {
+      "text": "Hey, how are you doing?",
+      "sender": {
+        "_id": "1",
+        "username": "john_doe",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+      },
+      "seen": true
+    },
+    "createdAt": "2024-12-02T10:20:30Z",
+    "updatedAt": "2024-12-02T10:20:30Z"
+  },
+  {
+    "_id": "b",
+    "participants": [
+      {
+        "_id": "2",
+        "username": "alice_smith",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg"
+      },
+      {
+        "_id": "3",
+        "username": "bob_jones",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg"
+      }
+    ],
+    "lastMessage": {
+      "text": "I'm doing well! Just wanted to ask if you got the files I sent over.",
+      "sender": {
+        "_id": "2",
+        "username": "alice_smith",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg"
+      },
+      "seen": false
+    },
+    "createdAt": "2024-12-02T10:22:00Z",
+    "updatedAt": "2024-12-02T10:22:00Z"
+  },
+  {
+    "_id": "c",
+    "participants": [
+      {
+        "_id": "3",
+        "username": "bob_jones",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg"
+      },
+      {
+        "_id": "1",
+        "username": "john_doe",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+      }
+    ],
+    "lastMessage": {
+      "text": "Yes, I got them. Everything looks good I'll review them shortly.",
+      "sender": {
+        "_id": "3",
+        "username": "bob_jones",
+        "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg"
+      },
+      "seen": true
+    },
+    "createdAt": "2024-12-02T10:24:15Z",
+    "updatedAt": "2024-12-02T10:24:15Z"
+  }
+]
