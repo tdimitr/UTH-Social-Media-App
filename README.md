@@ -1,6 +1,6 @@
 # 🌟 UTH Social Media App
 
-Welcome to the **UTH Social Media App**, a social networking platform where users can interact with posts, follow others, and enjoy a variety of social features with a seamless experience. The app is powered by the **MERN stack** for the web and **React Native** for mobile (Android & iOS), ensuring a smooth and consistent user experience across all devices.
+Welcome to the **UTH Social Media App**, a social networking platform where users can interact with posts, follow others, and enjoy a variety of social features with a seamless experience. The app is powered by the **MERN stack** for the web and **React Native** for mobile (Android & iOS), ensuring a smooth and consistent user experience across all devices..
 
 ## 🚀 App Features
 
