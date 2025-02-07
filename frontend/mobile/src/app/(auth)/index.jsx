@@ -160,7 +160,7 @@ export default function Login() {
 
           {/* Forgot Password Link */}
           <Text className="text-center text-gray-600 mt-2">
-            <Link replace href="/(auth)/forgot-password">
+            <Link replace href="/(auth)/forgot">
               <Text className="text-blue-500">Forgot Password?</Text>
             </Link>
           </Text>

@@ -49,7 +49,8 @@ Welcome to the **UTH Social Media App**, a social networking platform where user
 
 - **MongoDB** 🛢: For database storage and data retrieval.
 - **Express.js** 🚀: Server-side framework to handle HTTP requests.
-- **React & React Native (Expo)** ⚛️: For the front-end web application.
+- **React** ⚛️: For the front-end web application.
+- **React Native (Expo)** ⚛️: For the front-end mobile application.
 - **Node.js** 🔧: Back-end server environment to run JavaScript.
 - **Socket.io** 🔌: Real-time communication for chat features and notifications.
 - **Chakra UI & Tailwind CSS** 🎨: For building a clean and responsive User Interface.
