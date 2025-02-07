@@ -6,11 +6,11 @@ export const uploadImageToCloudinary = async (imageUri) => {
     name: "profile.jpg",
   });
   data.append("upload_preset", "ml_default");
-  data.append("cloud_name", "dv302drfp");
+  data.append("cloud_name", "<CLOUD_NAME>");
 
   try {
     const response = await fetch(
-      "https://api.cloudinary.com/v1_1/dv302drfp/image/upload",
+      "https://api.cloudinary.com/v1_1/<CLOUD_NAME>/image/upload",
       {
         method: "POST",
         body: data,
