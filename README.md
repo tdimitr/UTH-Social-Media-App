@@ -36,7 +36,7 @@ Welcome to the **UTH Social Media App**, a social networking platform where user
 - **Dark/Light Mode** 🌓:  
   Switch between dark and light themes for a personalized experience.
 
-- **Completely Responsive** 📱:  
+- **Cross Platform** 📱:  
   Enjoy the app on any device, optimized for web, Android, and iOS
 
 - **Chat App With Image Support** 💬:  
