@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "1",
+    "postedBy": [
+      {
+        "username": "alice_smith",
+        "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg"
+      }
+    ],
+    "text": "Random text for post 1. This is a placeholder post text. It can be about anything!",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073210/3_j0c5s5.jpg",
+    "likes": ["2", "3"],
+    "replies": [
+      {
+        "userId": "3",
+        "text": "Reply 1 on post 1. Nice post!",
+        "userProfilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg",
+        "username": "bob_jones"
+      }
+    ]
+  },
+  {
+    "_id": "2",
+    "postedBy": [
+      {
+        "username": "john_doe",
+        "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+      }
+    ],
+    "text": "Here's another random text for post 2. A brief text to describe the content of the post.",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073201/8_qhi0zs.jpg",
+    "likes": ["1", "3"],
+    "replies": [
+      {
+        "userId": "1",
+        "text": "Reply 1 on post 2. I love the idea behind this post.",
+        "userProfilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg",
+        "username": "alice_smith"
+      }
+    ]
+  },
+  {
+    "_id": "3",
+    "postedBy": [
+      {
+        "username": "bob_jones",
+        "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg"
+      }
+    ],
+    "text": "This is some random text for post 3. It could be anything, like a thought, quote, or comment.",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073206/4_youm6t.jpg",
+    "likes": ["1", "2"],
+    "replies": [
+      {
+        "userId": "2",
+        "text": "Reply 1 on post 3. I agree with your perspective!",
+        "userProfilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg",
+        "username": "john_doe"
+      }
+    ]
+  },
+  {
+    "_id": "4",
+    "postedBy": [
+      {
+        "username": "maria_huston",
+        "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073188/11_yocufa.jpg"
+      }
+    ],
+    "text": "This is some random text for post 4. It could be anything, like a thought, quote, or comment.",
+    "likes": ["1", "2", "3"],
+    "replies": []
+  }
+]

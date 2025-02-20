@@ -1,0 +1,27 @@
+[
+  {
+    "_id": "1",
+    "username": "alice_smith",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg"
+  },
+  {
+    "_id": "2",
+    "username": "john_doe",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+  },
+  {
+    "_id": "3",
+    "username": "bob_jones",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg"
+  },
+  {
+    "_id": "4",
+    "username": "maria_huston",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073188/11_yocufa.jpg"
+  },
+  {
+    "_id": "5",
+    "username": "david_lee",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073179/17_z99r8g.jpg"
+  }
+]

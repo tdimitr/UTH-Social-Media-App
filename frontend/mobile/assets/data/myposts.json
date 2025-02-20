@@ -1,0 +1,35 @@
+[
+  {
+    "_id": "5",
+    "postedBy": [
+      {
+        "username": "tdimitr",
+        "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073208/1_yroii0.jpg"
+      }
+    ],
+    "text": "This is my first post",
+    "likes": ["1", "4", "3"],
+    "replies": []
+  },
+
+  {
+    "_id": "6",
+    "postedBy": [
+      {
+        "username": "tdimitr",
+        "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073208/1_yroii0.jpg"
+      }
+    ],
+    "text": "This is some random text for post 3. It could be anything, like a thought, quote, or comment.",
+    "img": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073211/2_y8bjsl.jpg",
+    "likes": ["3", "2"],
+    "replies": [
+      {
+        "userId": "2",
+        "text": "Reply 1 on post 6. I agree with your perspective!",
+        "userProfilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg",
+        "username": "john_doe"
+      }
+    ]
+  }
+]

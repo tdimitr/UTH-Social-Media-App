@@ -1,0 +1,54 @@
+[
+  {
+    "_id": "1",
+    "conversationId": "a",
+    "sender": {
+      "username": "john_doe",
+      "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+    },
+    "text": "Hey, how are you doing?",
+    "seen": true,
+    "img": "",
+    "createdAt": "2024-12-02T10:20:30Z",
+    "updatedAt": "2024-12-02T10:20:30Z"
+  },
+  {
+    "_id": "2",
+    "conversationId": "b",
+    "sender": {
+      "username": "alice_smith",
+      "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073175/18_hw6qxv.jpg"
+    },
+    "text": "I'm doing well! Just wanted to ask if you got the files I sent over.",
+    "seen": false,
+    "img": "",
+    "createdAt": "2024-12-02T10:22:00Z",
+    "updatedAt": "2024-12-02T10:22:00Z"
+  },
+  {
+    "_id": "3",
+    "conversationId": "c",
+    "sender": {
+      "username": "bob_jones",
+      "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073189/14_gmuesb.jpg"
+    },
+    "text": "Yes, I got them. Everything looks good. I'll review them shortly.",
+    "seen": true,
+    "img": "",
+    "createdAt": "2024-12-02T10:24:15Z",
+    "updatedAt": "2024-12-02T10:24:15Z"
+  },
+  {
+    "_id": "4",
+    "conversationId": "a",
+    "sender": {
+      "username": "john_doe",
+      "profilePic": "https://res.cloudinary.com/dv302drfp/image/upload/v1733073186/13_biqsp1.jpg"
+    },
+    "text": "Thanks for the update! Let me know if you need any help.",
+    "seen": true,
+    "img": "",
+    "createdAt": "2024-12-02T10:26:30Z",
+    "updatedAt": "2024-12-02T10:26:30Z"
+  }
+]
