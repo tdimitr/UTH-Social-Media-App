@@ -1,10 +1,10 @@
-# 🌟 UTH Social Media App
+# UTH Social Media App
 
 Welcome to the **UTH Social Media App**, a social networking platform where users can interact with posts, follow others, and enjoy a variety of social features with a seamless experience. The app is powered by the **MERN stack** and **React Native** for mobile, ensuring a smooth and consistent user experience across all devices..
 
-## 🚀 App Features
+## App Features
 
-### 🕹️ **Core Features**
+### **Core Features**
 
 - **Authentication & Authorization with JWT** 🔑:  
   Secure user login and registration using JSON Web Tokens.
@@ -45,7 +45,7 @@ Welcome to the **UTH Social Media App**, a social networking platform where user
 - **Seen/Unseen Status for Messages** 👀:  
   Know when your messages have been seen by the recipient.
 
-### 🧠 **Tech Stack**
+### **Tech Stack**
 
 - **MongoDB** 🛢: For database storage.
 - **Express.js** 🚀: Server-side framework to handle HTTP requests.
