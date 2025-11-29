@@ -4,56 +4,56 @@ Welcome to the **UTH Social Media App**, a social networking platform where user
 
 ### **Features**
 
-- **Authentication & Authorization with JWT** 🔑:  
+- **Authentication & Authorization with JWT** :  
   Secure user login and registration using JSON Web Tokens.
 
-- **Email Verification** 📧:
+- **Email Verification** :
   Verify your email address during registration to ensure account security and authenticity.
 
-- **Reset Password** 🔒:
+- **Reset Password** :
   Easily reset your password via email if you forget it.
 
-- **Create Post** 📝:  
+- **Create Post** :  
   Share your thoughts, photos with your followers.
 
-- **Delete Post** 🗑️:  
+- **Delete Post** :  
   Remove posts that you no longer wish to share.
 
-- **Like/Unlike Post** ❤️:  
+- **Like/Unlike Post** :  
   Engage with posts by liking or unliking them.
 
-- **Comment to a Post** 💬:  
+- **Comment to a Post** :  
   Comment on posts and participate in discussions.
 
-- **Follow/Unfollow Users** 👥:  
+- **Follow/Unfollow Users** :  
   Stay updated with your favorite users by following them, or unfollow them whenever needed.
 
-- **Freeze Your Account** ❄️:  
+- **Freeze Your Account** :  
   Temporarily disable your account to take a break from social media.
 
-- **Dark/Light Mode** 🌓:  
+- **Dark/Light Mode** :  
   Switch between dark and light themes for a personalized experience.
 
-- **Completely Responsive** 📱:  
+- **Completely Responsive** :  
   Enjoy the app on any device, optimized for web, Android and iOS
 
-- **Chat App With Image Support** 💬:  
+- **Chat App With Image Support** :  
   Real-time chat with the ability to share images with friends.
 
-- **Seen/Unseen Status for Messages** 👀:  
+- **Seen/Unseen Status for Messages** :  
   Know when your messages have been seen by the recipient.
 
 ### **Tech Stack**
 
-- **MongoDB** 🛢: For database storage.
-- **Express.js** 🚀: Server-side framework to handle HTTP requests.
-- **React** ⚛️: For the front-end web application.
-- **React Native (Expo)** ⚛️: For the front-end mobile application.
-- **Node.js** 🔧: Back-end server environment to run JavaScript.
-- **Socket.io** 🔌: Real-time communication for chat features and notifications.
-- **Chakra UI & Tailwind CSS** 🎨: For building a clean and responsive User Interface.
+- **MongoDB** : For database storage.
+- **Express.js** : Server-side framework to handle HTTP requests.
+- **React** : For the front-end web application.
+- **React Native (Expo)** : For the front-end mobile application.
+- **Node.js** : Back-end server environment to run JavaScript.
+- **Socket.io** : Real-time communication for chat features and notifications.
+- **Chakra UI & Tailwind CSS** : For building a clean and responsive User Interface.
 
-## 🖥️ Installation
+##  Installation
 
 Follow the steps below to set up the project:
 
